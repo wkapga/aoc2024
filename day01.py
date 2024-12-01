@@ -24,3 +24,22 @@ for x in s[:,0]:
 
 print('result 2:')
 print(score)
+
+
+
+# %%
+
+s = np.asarray([np.fromstring(x, dtype= int, sep = '   ') for x in s1] )
+
+nr, occur = np.unique(s[:,1], return_counts= True)
+
+occurences = dict(zip(nr, occur))
+
+score = 0
+for x in s[:,0]:
+
+    if x in occurences.keys():
+        score = score + x * occurences[x]
+
+print('result 2b:')
+print(score)
