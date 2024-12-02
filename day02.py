@@ -14,7 +14,6 @@ def test_list(levels):
         diff = updown* (levels[i] - levels[i-1] )
         if (diff <1) or (diff >3):
             return False
-            break
     return True
 
 
