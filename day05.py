@@ -10,11 +10,6 @@ input = open(Path(proj_path,'input05b.txt' ), 'r' ).read()
 
 #%%
 
-
-input.split('\n')[22].split(',')
-
-#%%
-
 pages = defaultdict(list)
 updates = list()
 
